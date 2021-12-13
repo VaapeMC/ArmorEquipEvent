@@ -26,28 +26,37 @@ public enum ArmorType{
 	public final static ArmorType matchType(final ItemStack itemStack){
 		if(itemStack == null) { return null; }
 		switch (itemStack.getType()){
+			case NETHERITE_HELMET:
 			case DIAMOND_HELMET:
-			case GOLD_HELMET:
+			case GOLDEN_HELMET:
 			case IRON_HELMET:
 			case CHAINMAIL_HELMET:
 			case LEATHER_HELMET:
 			case PUMPKIN:
-			case SKULL_ITEM:
+			case SKELETON_SKULL:
+			case WITHER_SKELETON_SKULL:
+			case CREEPER_HEAD:
+			case ZOMBIE_HEAD:
+			case DRAGON_HEAD:
+			case PLAYER_HEAD:
 				return HELMET;
+			case NETHERITE_CHESTPLATE:
 			case DIAMOND_CHESTPLATE:
-			case GOLD_CHESTPLATE:
+			case GOLDEN_CHESTPLATE:
 			case IRON_CHESTPLATE:
 			case CHAINMAIL_CHESTPLATE:
 			case LEATHER_CHESTPLATE:
 				return CHESTPLATE;
+			case NETHERITE_LEGGINGS:
 			case DIAMOND_LEGGINGS:
-			case GOLD_LEGGINGS:
+			case GOLDEN_LEGGINGS:
 			case IRON_LEGGINGS:
 			case CHAINMAIL_LEGGINGS:
 			case LEATHER_LEGGINGS:
 				return LEGGINGS;
+			case NETHERITE_BOOTS:
 			case DIAMOND_BOOTS:
-			case GOLD_BOOTS:
+			case GOLDEN_BOOTS:
 			case IRON_BOOTS:
 			case CHAINMAIL_BOOTS:
 			case LEATHER_BOOTS:
